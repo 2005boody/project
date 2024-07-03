@@ -1,0 +1,428 @@
+*{
+  scroll-behavior: smooth;
+}
+body{
+  background: url('william-daigneault-fZmhlIEWVdA-unsplash.jpg') no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.home{
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 200%;
+}
+nav{
+display: flex;
+position: fixed;
+align-items: center;
+justify-content: space-around;
+height: 70px;
+background-color: rgba(255,255,255,0.703);
+-webkit-backdrop-filter: blur(30px);
+backdrop-filter: blur(10px);
+width: 110%;
+z-index: 1;
+font-style: oblique;
+padding: 0;
+margin: 0;
+top: 0;
+}
+.logo h3{
+font-size: 20px;
+}
+.nav a {
+text-decoration: none;
+color: black;
+font-size: 15px;
+font-weight: 700;
+margin: 20px;
+padding: 13px;
+}
+.nav a:hover{
+border: none;
+background-color: black;
+color: white;
+border-radius: 50px;
+}
+.body1{
+display: flex;
+padding: 150px;
+gap: 70px;
+flex-wrap: wrap;
+align-items: center;
+justify-content: center;
+position: relative;
+padding-bottom: 100px;
+}
+.choice{
+display: grid;
+justify-items: center;
+}
+.cardchoice {
+width: 190px;
+height: 254px;
+border-radius: 50px;
+background: #e0e0e0;             
+}
+#suvchoice{
+background-image: url("suv.png");
+background-repeat: no-repeat,repeat;
+background-size: cover;
+background-position: center; 
+background-size: 90%;
+}
+#sedanchoice{
+background-image: url("sedan.png");
+background-repeat: no-repeat,repeat;
+background-size: cover;
+background-position: center; 
+background-size: 90%;
+}
+#sportchoice{
+background-image: url("lamborghini.png");
+background-repeat: no-repeat,repeat;
+background-size: cover;
+background-position: center; 
+background-size: 90%;
+}
+button {
+display: inline-block;
+border-radius: 4px;
+background-color: #fff;
+border: none;
+color: black;
+text-align: center;
+font-size: 17px;
+padding: 16px;
+width: 130px;
+transition: all 0.5s;
+cursor: pointer;
+margin: 5px;  
+}
+
+button span {
+cursor: pointer;
+display: inline-block;
+position: relative;
+transition: 0.5s;
+}
+
+button span:after {
+content: '»';
+position: absolute;
+opacity: 0;
+top: 0;
+right: -15px;
+transition: 0.5s;
+}
+
+button:hover span {
+padding-right: 15px;
+}
+
+button:hover span:after {
+opacity: 1;
+right: 0;
+}
+.SUV{
+background-repeat: no-repeat;
+background-size: cover;
+width: 100%;
+height: 200%;
+padding-bottom: 150px;
+}
+.Suvhead{
+color: #fff;
+text-align: center;
+font-size: xx-large;
+font-style: oblique;
+text-decoration: underline;
+}
+.container{
+display: flex;
+padding: 10px;
+gap: 70px;
+flex-wrap: wrap;
+align-items: center;
+justify-content: center;
+position: relative;
+}
+#one{
+background-image: url("tiguan.jpg");
+background-repeat: no-repeat,repeat;
+background-size: cover;
+background-position: center;
+}
+#two{
+background-image: url("Wheelsage.jpg");
+background-repeat: no-repeat,repeat;
+background-size: cover;
+background-position: center;
+}
+#three{
+background-image: url("MG.jpg");
+background-repeat: no-repeat,repeat;
+background-size: cover;
+background-position: center;
+}
+.specs{
+font-style: oblique;
+color: white;
+}
+.card-back a{
+  text-decoration: none;
+}
+.card {
+width: 350px;
+height: 300px;
+perspective: 1000px;
+align-items: center;
+justify-content: center;
+margin-top: 10%;
+}
+
+.card-inner {
+width: 100%;
+height: 100%;
+position: relative;
+transform-style: preserve-3d;
+transition: transform 0.999s;
+}
+
+.card:hover .card-inner {
+transform: rotateY(180deg);
+}
+
+.card-front,
+.card-back {
+position: absolute;
+width: 100%;
+height: 100%;
+backface-visibility: hidden;
+}
+
+.card-front {
+background-color:black;
+color: #fff;
+display: flex;
+align-items: center;
+border: 5px solid black;
+border-radius: 10px;
+justify-content: center;
+font-size: 24px;
+transform: rotateY(0deg);
+}
+
+.card-back {
+background-color: black;
+color: white;
+display: flex;
+align-items: center;
+border: 10px solid black;
+border-radius: 10px;
+justify-content: center;
+font-size: 24px;
+transform: rotateY(180deg);
+}
+.sedan{
+background-repeat: no-repeat;
+background-size: cover;
+width: 100%;
+height: 150%;
+padding-bottom: 150px;
+border: 10px;
+}
+.cardsedan {
+    position: relative;
+    width: 300px;
+    height: 200px;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    perspective: 1000px;
+    box-shadow: 0 0 0 5px #ffffff80;
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+  
+.cardsedan svg {
+    width: 48px;
+    fill: black;
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+  
+.cardsedan:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
+}
+  
+.card__content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: black;
+    transform: rotateX(-90deg);
+    transform-origin: bottom;
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+  
+.cardsedan:hover .card__content {
+    transform: rotateX(0deg);
+}
+  
+.card__title {
+    margin: 0;
+    font-size: 24px;
+    color: white;
+    font-weight: 700;
+    text-decoration: none;
+}
+  
+.cardsedan:hover svg {
+    scale: 0;
+}
+  
+.card__description {
+    margin: 10px 0 0;
+    font-size: 14px;
+    color: white;
+    line-height: 1.4;
+}
+#bmw{
+    scale: 0.4;
+}
+#mercedes{
+    scale: 0.4;
+}
+#pegeut{
+    scale: 0.5;
+}
+.sedanhead{
+    color: #fff;
+      text-align: center;
+      font-size: xx-large;
+      font-style: oblique;
+      text-decoration: underline;
+}
+.containersedan{
+       display: flex;
+        padding: 10px;
+        gap: 70px;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        top: 150px;
+}
+.card-containersport {
+  width: 300px;
+  height: 300px;
+  position: relative;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+
+.cardsport {
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+}
+
+.cardsport .front-contentsport {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1)
+}
+
+.cardsport .front-contentsport p {
+  font-size: 32px;
+  font-weight: 700;
+  opacity: 1;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1)
+}
+
+.cardsport .content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 10px;
+  background:black;
+  color: #e8e8e8;
+  padding: 20px;
+  line-height: 1.5;
+  border-radius: 5px;
+  text-decoration: none;
+  transform: translateX(-96%);
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.cardsport .content .heading {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.cardsport:hover .content {
+  transform: translateY(0);
+}
+
+.cardsport:hover .front-contentsport {
+  transform: translateX(-30%);
+}
+
+.cardsport:hover .front-content p {
+  opacity: 0;
+}
+.sportcontainer{
+  display: flex;
+  padding: 10px;
+  gap: 70px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  top: 140px;
+}
+.sporthead{
+  color: #fff;
+  text-align: center;
+  font-size: xx-large;
+  font-style: oblique;
+  text-decoration: underline;
+}
+.sport{
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 150%;
+  padding-bottom: 150px;
+}
+#gt3{
+  scale: 0.43;
+}
+#svj{
+  scale: 0.41;
+}
+#agera{
+  scale: 0.41;
+}
